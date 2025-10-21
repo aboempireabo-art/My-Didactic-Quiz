@@ -398,13 +398,15 @@ const quizQuestions = [
 function generateQuiz() {
     const quizForm = document.getElementById('quizForm');
     let htmlContent = '';
-    
+    // 👈 1. هذا السطر يحسب العدد الفعلي للأسئلة الموجودة حالياً (مثل 64، 77، أو 63 بعد الحذف)
+    const actualTotalQuestions = quizQuestions.length;
     quizQuestions.forEach((q, index) => {
         // ترتيب عشوائي للخيار (لتجنب حفظ مكان الإجابة الصحيحة)
         const shuffledOptions = shuffleArray([...q.options]);
 
         htmlContent += `<div class="question-box">`;
-        htmlContent += `<p><strong>السؤال ${index + 1} من 77:</strong> ${q.question}</p>`;
+        // 👈 2. استبدال الرقم الثابت بالمتغير المحسوب
+htmlContent += `<p><strong>السؤال ${index + 1} من ${actualTotalQuestions}:</strong> ${q.question}</p>`;
         htmlContent += `<div class="options">`;
         
         shuffledOptions.forEach(option => {
