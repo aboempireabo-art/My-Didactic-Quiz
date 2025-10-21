@@ -404,7 +404,7 @@ function generateQuiz() {
         const shuffledOptions = shuffleArray([...q.options]);
 
         htmlContent += `<div class="question-box">`;
-        htmlContent += `<p><strong>السؤال ${index + 1} من 70:</strong> ${q.question}</p>`;
+        htmlContent += `<p><strong>السؤال ${index + 1} من 77:</strong> ${q.question}</p>`;
         htmlContent += `<div class="options">`;
         
         shuffledOptions.forEach(option => {
@@ -439,7 +439,7 @@ function shuffleArray(array) {
 function submitQuiz() {
     let score = 0;
     let feedbackHTML = '<h3>مراجعة إجاباتك:</h3>';
-    const totalQuestions = quizQuestions.length; // (يجب أن تكون 64)
+    const totalQuestions = quizQuestions.length; // (يجب أن تكون 77)
     
     quizQuestions.forEach((q, index) => {
         const selectedOption = document.querySelector(`input[name="q${index}"]:checked`);
@@ -473,7 +473,7 @@ function submitQuiz() {
     feedbackDiv.innerHTML = feedbackHTML;
     resultsDiv.style.display = 'block'; // إظهار لوحة النتائج
 
-    // تحديث نص النتيجة لتضمين المجموع الكلي (70)
+    // تحديث نص النتيجة لتضمين المجموع الكلي (77)
     document.getElementById('score').parentNode.innerHTML = `
         لقد حصلت على 
         <span id="score" style="font-weight: bold; color: ${score >= totalQuestions * 0.5 ? '#4CAF50' : '#f44336'};">${score}</span>
