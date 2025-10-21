@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اختبار الكفاءة المهنية - إعداد مدونة التعليم الابتدائي ]</title>
+    <title>اختبار الكفاءة المهنية - مدونة الكفاية التربوية</title>
     <style>
         body { font-family: 'Arial', sans-serif; direction: rtl; text-align: right; padding: 20px; background-color: #f4f4f9; }
         .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
@@ -15,6 +15,65 @@
         #results { margin-top: 20px; padding: 15px; border-radius: 6px; background-color: #e6ffe6; border: 1px solid #ccebcc; display: none; }
         button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s; }
         button:hover { background-color: #0056b3; }
+        
+        /* تصميم خاص لمنطقة الدعم والتواصل */
+        .support-area { 
+            margin-top: 20px; 
+            padding: 15px; 
+            background-color: #f0f0f5; 
+            border-radius: 6px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            border: 1px solid #ddd;
+        }
+        .support-area p {
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center; 
+        }
+        .support-area a {
+            color: #007bff; /* لون أزرق للرابط */
+            text-decoration: none; /* إزالة الخط تحت الرابط */
+            font-weight: bold;
+        }
+        .support-area a:hover {
+            text-decoration: underline; /* إظهار الخط عند مرور الفأرة */
+        }
+        
+        /* تصميم زر PayPal */
+        .paypal-button {
+            display: inline-block;
+            padding: 10px 20px; 
+            background-color: #00457C; 
+            color: white !important; 
+            border-radius: 5px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+        .paypal-button:hover {
+            background-color: #003366;
+            text-decoration: none;
+        }
+
+        /* تصميم زر الترويج للمشروع الآخر */
+        .promo-link { 
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: #ffc107; /* لون أصفر/ذهبي لجذب الانتباه */
+            color: #333;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .promo-link:hover {
+            background-color: #e0a800;
+        }
+
         footer { text-align: center; margin-top: 40px; padding-top: 15px; border-top: 1px solid #ccc; font-size: 0.9em; color: #666; }
     </style>
 </head>
@@ -22,10 +81,17 @@
 
 <div class="container">
     <div class="header">
-        <img src="logo.jpg.jpg" alt="شعار الأستاذ" class="logo"> 
+        <img src="logo.jpg.jpg" alt="شعار مدونة الكفاية التربوية" class="logo"> 
         <h1>اختبار الكفاءة المهنية التجريبي</h1>
-        <h2>إعداد وتقديم: الأستاذ [أبوبكر]</h2>
+        <h2>إعداد وتقديم: مدونة الكفاية التربوية</h2> 
         <p>اختبار شامل في الديداكتيك والمقاربات البيداغوجية (77 سؤالاً).</p>
+        
+        <a href="https://aboempireabo-art.github.io/Didactique-Premium-120Q/" 
+           target="_blank" 
+           class="promo-link">
+            🚀 انتقل إلى اختبار التحدي الأكبر (120 سؤالاً)!
+        </a>
+        
     </div>
     
     <form id="quizForm">
@@ -35,13 +101,27 @@
 
     <div id="results">
         <h2>نتيجتك:</h2>
-        <p>لقد حصلت على <span id="score"></span> من 77 إجابة صحيحة.</p>
+        <p>لقد حصلت على <span id="score"></span> من 77 إجابة صحيحة.</p> 
         <div id="feedback"></div>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2025 - جميع الحقوق محفوظة: [اسمك بالكامل]. تم التصميم لأغراض تربوية.</p>
+    <div class="support-area">
+        <p>هل وجدت هذا الاختبار مفيداً؟ يمكنك دعم مدونة الكفاية التربوية لضمان استمرار المحتوى والتطوير:</p>
+        
+        <a href="https://www.paypal.com/paypalme/BoubakerLachgar" 
+           target="_blank" 
+           class="paypal-button">
+            ادعم مدونة الكفاية التربوية (PayPal)
+        </a>
+        
+        <p style="margin-top: 15px; font-weight: bold;">للتواصل والاستفسارات والملاحظات:</p>
+        <p>راسلنا على: <a href="mailto:alkifayaatarbawiya@gmail.com">alkifayaatarbawiya@gmail.com</a></p>
+
+        <p style="margin-top: 10px;">نقدر دعمكم الكريم!</p>
+    </div>
+    <p>&copy; 2025 - جميع الحقوق محفوظة لـ **مدونة الكفاية التربوية**. تم التصميم لأغراض تربوية.</p>
 </footer>
 
 <script src="quiz.js"></script> 
