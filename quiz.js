@@ -1,5 +1,5 @@
 // ==========================================================
-// الجزء الأول: مصفوفة الأسئلة والإجابات (76 سؤالاً)
+// الجزء الأول: مصفوفة الأسئلة والإجابات (64 سؤالاً)
 // يمكنك تغيير محتوى هذا الجزء لاحقاً كما تشاء
 // ==========================================================
 
@@ -439,7 +439,7 @@ function shuffleArray(array) {
 function submitQuiz() {
     let score = 0;
     let feedbackHTML = '<h3>مراجعة إجاباتك:</h3>';
-    const totalQuestions = quizQuestions.length; // (يجب أن تكون 70)
+    const totalQuestions = quizQuestions.length; // (يجب أن تكون 64)
     
     quizQuestions.forEach((q, index) => {
         const selectedOption = document.querySelector(`input[name="q${index}"]:checked`);
